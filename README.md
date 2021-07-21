@@ -1,3 +1,5 @@
+[![Django My Way](https://github.com/smith153/django-my-way/actions/workflows/python-app.yml/badge.svg)](https://github.com/smith153/django-my-way/actions/workflows/python-app.yml)
+
 django-my-way
 ====================
 
