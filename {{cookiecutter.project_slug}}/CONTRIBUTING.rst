@@ -13,17 +13,22 @@ Tips
 -------
 
 - Running migrations:
+
   - python manage.py makemigrations model-name-here
   - python manage.py migrate model-name-here
 
 - Create a new "app":
+
   - python manage.py startapp app-name-here
+
     - Move new app to child directory:
+
       - mv app-name-here parent/app-name-here
       - Update 'name' to fully qualified in: app-name-here/apps.py
       - Add app to config/settings/base.py
-   - Add views  to app-name-here/views.py
-   - Create app-name-here/urls.py
-   - Add app to config/urls.py
-   - Create app templates under templates/app-name-here/
+
+  - Add views  to app-name-here/views.py
+  - Create app-name-here/urls.py
+  - Add app to config/urls.py
+  - Create app templates under templates/app-name-here/
 
