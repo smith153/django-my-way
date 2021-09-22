@@ -3,7 +3,7 @@
 <html lang='en'>
 
 <head>
-  <title>{% block title %}net153.net{% endblock title %}</title>
+  <title>{% block title %}{% endraw %}{{ cookiecutter.project_name }}{% raw %}{% endblock title %}</title>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
@@ -14,13 +14,13 @@
 
 <body>
   <nav>
-    <a href="http://net153.net">
+    <a href="{% url 'home' %}">
       <div class="logo"></div>
     </a>
     <ul>
       <li><a class="nav" href="{% url 'home' %}" title="Home">Home</a></li>
-      <li><a class="nav" href="{% url 'wserver' %}" title="Server Stats">Server Stats</a></li>
-      <li><a class="nav" href="{% url 'blog:list' %}" title="Tech Blog">Tech Blog</a></li>
+      <li><a class="nav" href="{% url 'about' %}" title="About">About</a></li>
+      <li><a class="nav" href="{% url 'account_login' %}" title="Login">Login</a></li>
     </ul>
   </nav>
 
@@ -34,7 +34,7 @@
   {% endif %}
 
   {% block content %}
-  <p>Net153 Home This text is inherited on other pages!</p>
+  <p>This text is inherited on other pages!</p>
   {% endblock content %}
 
 </body>
